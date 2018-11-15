@@ -185,6 +185,7 @@ pub struct DBIterator {
 }
 
 unsafe impl Send for DBIterator {}
+unsafe impl Sync for DBIterator {}
 
 pub enum Direction {
     Forward,
